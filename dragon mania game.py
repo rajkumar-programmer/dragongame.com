@@ -1,7 +1,9 @@
 import random
+from colorama import Fore
 
 
 def start():
+    print(Fore.GREEN + 'Welcome to the Game')
     mode = input('choose mode Easy,Normal or Hard - ')
     mode = mode.lower()
     if mode == 'easy':
@@ -16,6 +18,7 @@ def start():
 
 
 def easy():
+    print(Fore.GREEN + 'Welcome o Easy Level')
     print('Dragon is sleeping')
     choose = input('You want to escape or fight with dragon - ')
     choose.lower()
@@ -40,6 +43,7 @@ def easy():
 
 
 def normal():
+    print(Fore.YELLOW + 'Welcome to normal level')
     print("Welcome to normal Level")
     print('Dragon is going to take sleep')
     print("Get ready to fight !")
@@ -58,6 +62,7 @@ def normal():
 
 
 def hard():
+    print(Fore.RED + 'Welcome tyo Hard Level')
     print("Welcome to Hard Level")
     print('Get ready for fight with dragon !')
     result = random.randint(0, 1000)
